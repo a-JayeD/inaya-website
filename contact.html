@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INAYA - যোগাযোগ করুন। আমাদের সাথে কথা বলুন।">
+    <title>Contact Us - INAYA</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Sans+Bengali:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💫</text></svg>">
+</head>
+
+<body data-page="contact">
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">INAYA</span>
+            </a>
+            
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            
+            <a href="products.html" class="btn btn-primary header-cta">Shop Now</a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="menu-close" id="menu-close" aria-label="Close menu">✕</button>
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="products.html" class="mobile-nav-link">Products</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="contact.html" class="mobile-nav-link active">Contact</a>
+        </nav>
+    </div>
+    
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">যোগাযোগ করুন</h1>
+            <p class="page-subtitle">Contact Us</p>
+        </div>
+    </section>
+    
+    
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info Cards -->
+                <div class="contact-info">
+                    <div class="contact-card animate-on-scroll">
+                        <div class="contact-card-icon">📱</div>
+                        <h3>ফোন</h3>
+                        <p>সকাল ১০টা - রাত ১০টা</p>
+                        <a href="tel:+8801XXXXXXXXX" class="contact-link">+880 1XXX-XXXXXX</a>
+                    </div>
+                    
+                    <div class="contact-card contact-card-whatsapp animate-on-scroll">
+                        <div class="contact-card-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <p>সবচেয়ে দ্রুত উত্তর পাবেন</p>
+                        <a href="https://wa.me/8801XXXXXXXXX" class="contact-link" target="_blank">
+                            মেসেজ করুন
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card animate-on-scroll">
+                        <div class="contact-card-icon">✉️</div>
+                        <h3>ইমেইল</h3>
+                        <p>যেকোনো প্রশ্নের জন্য</p>
+                        <a href="mailto:hello@inaya.com" class="contact-link">hello@inaya.com</a>
+                    </div>
+                    
+                    <div class="contact-card animate-on-scroll">
+                        <div class="contact-card-icon">📍</div>
+                        <h3>ঠিকানা</h3>
+                        <p>Dhaka, Bangladesh</p>
+                        <span class="contact-note">শুধুমাত্র অনলাইন সার্ভিস</span>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <h2>মেসেজ পাঠান</h2>
+                    <p class="form-intro">কোন প্রশ্ন বা পরামর্শ থাকলে আমাদের জানান</p>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">আপনার নাম *</label>
+                            <input 
+                                type="text" 
+                                id="contact-name" 
+                                class="form-input"
+                                placeholder="পুরো নাম"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-phone" class="form-label">ফোন নম্বর *</label>
+                            <input 
+                                type="tel" 
+                                id="contact-phone" 
+                                class="form-input"
+                                placeholder="01XXXXXXXXX"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">বিষয়</label>
+                            <select id="contact-subject" class="form-select">
+                                <option value="general">সাধারণ জিজ্ঞাসা</option>
+                                <option value="order">অর্ডার সম্পর্কে</option>
+                                <option value="product">পণ্য সম্পর্কে</option>
+                                <option value="feedback">ফিডব্যাক</option>
+                                <option value="other">অন্যান্য</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">আপনার মেসেজ *</label>
+                            <textarea 
+                                id="contact-message" 
+                                class="form-textarea"
+                                rows="5"
+                                placeholder="আপনার মেসেজ লিখুন..."
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            <span>মেসেজ পাঠান</span>
+                            <span>→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">❓ FAQ</span>
+                <h2 class="section-title">সচরাচর জিজ্ঞাসা</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>কিভাবে অর্ডার করবো?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>পছন্দের পণ্য সিলেক্ট করে "অর্ডার করুন" বাটনে ক্লিক করুন। আপনার তথ্য দিয়ে ফর্ম পূরণ করুন এবং WhatsApp এ সাবমিট করুন। আমরা আপনার সাথে যোগাযোগ করে অর্ডার কনফার্ম করবো।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>ডেলিভারি কতদিন লাগে?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ঢাকার ভেতরে সাধারণত ২-৩ কর্মদিবস এবং ঢাকার বাইরে ৩-৫ কর্মদিবস সময় লাগে। বিশেষ ক্ষেত্রে সময় ভিন্ন হতে পারে।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>পেমেন্ট কিভাবে করবো?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>আমরা ক্যাশ অন ডেলিভারি (COD) সুবিধা দিই। পণ্য হাতে পেয়ে পেমেন্ট করতে পারবেন। এছাড়া bKash/Nagad এ অগ্রিম পেমেন্টও করতে পারেন।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>সাইজ কিভাবে বুঝবো?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>চুড়ির সাইজ সাধারণত 2.2 থেকে 2.10 পর্যন্ত হয়। আপনার হাতের মাপ অনুযায়ী সাইজ নির্বাচন করুন। সাইজ নিয়ে সন্দেহ থাকলে WhatsApp এ জিজ্ঞেস করুন।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>রিটার্ন/এক্সচেঞ্জ করা যায়?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>পণ্যে কোন সমস্যা থাকলে ডেলিভারির সময়ই জানাবেন। সমস্যাযুক্ত পণ্য আমরা এক্সচেঞ্জ করে দিই। তবে কাস্টমাইজড পণ্য রিটার্ন করা যায় না।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Social Section -->
+    <section class="social-section">
+        <div class="container">
+            <div class="social-content animate-on-scroll">
+                <h2>সোশ্যাল মিডিয়ায় ফলো করুন</h2>
+                <p>নতুন কালেকশন ও অফার সম্পর্কে জানতে আমাদের ফলো করুন</p>
+                
+                <div class="social-links-large">
+                    <a href="https://facebook.com/inayagifts" class="social-link-large" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                    
+                    <a href="https://instagram.com/inayagifts" class="social-link-large" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 INAYA. All rights reserved. Made with 💕 in Bangladesh.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/8801XXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+    
+    
+    <script src="js/config.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Contact Form & FAQ Scripts -->
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked one if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+        
+        // Contact Form Handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const subject = document.getElementById('contact-subject').value;
+            const message = document.getElementById('contact-message').value;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `
+🔔 *নতুন মেসেজ - INAYA*
+━━━━━━━━━━━━━━━━━━━
+
+👤 *নাম:* ${name}
+📱 *ফোন:* ${phone}
+📋 *বিষয়:* ${subject}
+
+📝 *মেসেজ:*
+${message}
+
+━━━━━━━━━━━━━━━━━━━
+            `.trim();
+            
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMessage}`, '_blank');
+        });
+    </script>
+</body>
+</html>
