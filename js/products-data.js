@@ -28,8 +28,8 @@ const PRODUCTS = [
         id: "bangle-001",
         name: "Blue and White combination bangles",
         nameBn: "নীল ও হোয়াইট কম্বিনেশনের চুড়ি",
-        price: 500,
-        originalPrice: 550,      // Optional: for showing discount (set to 0 if no discount)
+        price: 350,
+        originalPrice: 400,      // Optional: for showing discount (set to 0 if no discount)
         
         // Main image (shown in product card)
         image: "./assets/images/image1.jpeg",
@@ -75,7 +75,7 @@ const PRODUCTS = [
         name: "Trendy purple Thread Bangles",
         nameBn: "আধুনিক পার্পেল সুতার চুড়ি",
         price: 320,
-        originalPrice: 0,
+        originalPrice: 350,
         
         image: "./assets/images/image2.jpeg",
         
@@ -95,7 +95,7 @@ const PRODUCTS = [
         featured: true,
         inStock: true,
         isNew: false,
-        onSale: false
+        onSale: true
     },
     
     // ═══════════════════════════════════════════════════════════
@@ -105,8 +105,8 @@ const PRODUCTS = [
         id: "bangle-003",
         name: "Crystal Stone on Navy Blue Bangles",
         nameBn: "ক্রিস্টাল পাথরের নেভিব্লু চুড়ি",
-        price: 630,
-        originalPrice: 700,
+        price: 380,
+        originalPrice: 410,
         
         image: "./assets/images/image3.jpeg",
         
@@ -121,7 +121,7 @@ const PRODUCTS = [
         descriptionBn: "অত্যাশ্চর্য ক্রিস্টাল পাথরের চুড়ি যা আলোতে সুন্দরভাবে ঝলমল করে। নিরাপদ সেটিং সহ প্রিমিয়াম মানের পাথর।",
         
         sizes: ["24", "26", "28"],
-        setQuantity: 2,
+        setQuantity: 5,
         tags: ["party", "crystal", "premium", "sparkle"],
         featured: true,
         inStock: true,
@@ -136,7 +136,7 @@ const PRODUCTS = [
         id: "bangle-004",
         name: "Aesthetic Black Bangles",
         nameBn: " নান্দনিক কালো চুড়ি",
-        price: 420,
+        price: 299,
         originalPrice: 0,
         
         image: "./assets/images/image4.jpeg",
@@ -152,7 +152,7 @@ const PRODUCTS = [
         descriptionBn: "জটিল ঐতিহ্যবাহী প্যাটার্ন সহ ক্লাসিক অ্যান্টিক-ফিনিশ তামার চুড়ি। যেকোনো পোশাকের জন্য চিরন্তন কমনীয়তা।",
         
         sizes: ["24", "26", "28"],
-        setQuantity: 4,
+        setQuantity: 3,
         tags: ["aesthetic", "black", "traditional", "ethnic"],
         featured: false,
         inStock: true,
@@ -167,8 +167,8 @@ const PRODUCTS = [
         id: "bangle-005",
         name: "Aesthetic Square bangle with Meenakari Enamel",
         nameBn: "নান্দনিক স্কয়ার মীনাকারি এনামেল চুড়ি",
-        price: 650,
-        originalPrice: 750,
+        price: 199,
+        originalPrice: 249,
         
         image: "./assets/images/image5.jpeg",
         
@@ -196,9 +196,9 @@ const PRODUCTS = [
     // ═══════════════════════════════════════════════════════════
     {
         id: "bangle-006",
-        name: "Modern Bllue bangle Set with golden stones",
+        name: "Modern Blue bangle Set with golden stones",
         nameBn: "মডার্ন নীল চুড়ি সেট সোনালী পাথর সহ",
-        price: 380,
+        price: 220,
         originalPrice: 0,
         
         image: "./assets/images/image6.jpg",
