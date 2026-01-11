@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const product = getProductById(productId);
         if (product) {
             displayOrderProduct(product, selectedSize, selectedQty);
-            setupOrderForm(product);
+            // setupOrderForm(product);
         } else {
             showError('পণ্য খুঁজে পাওয়া যায়নি');
         }
