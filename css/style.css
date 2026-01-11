@@ -296,8 +296,21 @@ section {
 }
 
 .btn-instagram {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background: linear-gradient(
+        45deg,
+        #000000,
+        #69C9D0,
+        #EE1D52,
+        #000000
+    );
+    background-size: 300% 300%;
+    background-position: 0% 50%;
     color: white;
+    transition: background-position 0.6s ease, transform 0.3s ease;
+}
+.btn-instagram:hover {
+     background-position: 100% 50%;
+    transform: translateY(-1px);
 }
 
 .btn-large {

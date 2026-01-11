@@ -29,7 +29,7 @@ const CONFIG = {
     storeTaglineBn: "ভালোবাসায় তৈরি",
     
     // Contact Information
-    email: "inayaGiftShop@gmail.com",          // 👈 CHANGE THIS
+    email: "inayagift011@gmail.com",          // 👈 CHANGE THIS
     phone: "+880 1903585731",         // 👈 CHANGE THIS
     address: "Dhaka, Bangladesh",       // 👈 CHANGE THIS
     
