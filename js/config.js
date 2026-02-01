@@ -17,7 +17,7 @@ const CONFIG = {
     // Replace with your WhatsApp number (with country code, no + sign)
     // Example: Bangladesh number 01712345678 becomes 8801712345678
     
-    whatsappNumber: "8801903585731",  // 👈 CHANGE THIS TO YOUR NUMBER
+    whatsappNumber: "8801609293565",  // 👈 CHANGE THIS TO YOUR NUMBER
     
     
     // ═══════════════════════════════════════════════════════════
